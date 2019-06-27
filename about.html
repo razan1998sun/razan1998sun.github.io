@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Clean Blog - Start Bootstrap Theme</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+<link rel="icon" href="http://freeflaticons.com/wp-content/uploads/2014/10/teacherreading-copy-1412994218kn48g.png">
+  <title>University Announcements.</title>
+  <!-- Custom styles for this template --> 
+  <link href="css/clean-blog.min.css" rel="stylesheet">
+<style>
+        * {box-sizing: border-box}
+body {font-family: "Lato", sans-serif; background-color: whitesmoke;}
+    #searchdiv , #reservediv , #borrowdiv { border: 2px solid white; margin-bottom: -199px;}
+
+    .searchbar{
+    margin-bottom: auto;
+    margin-top: auto;
+    height: 60px;
+    background-color: #353b48;
+    border-radius: 30px;
+    padding: 10px;
+    }
+
+    .search_input{
+    color: white;
+    border: 0;
+    outline: 0;
+    background: none;
+    width: 0;
+    caret-color:transparent;
+    line-height: 40px;
+    transition: width 0.4s linear;
+    }
+
+    .searchbar:hover > .search_input{
+    padding: 0 10px;
+    width: 450px;
+    caret-color:red;
+    transition: width 0.4s linear;
+    }
+
+    .searchbar:hover > .search_icon{
+    background: white;
+    color: #e74c3c;
+    }
+
+    .search_icon{
+    height: 40px;
+    width: 40px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color:white;
+    }
+
+
+/* Style the tab */
+.tab {
+  float: left;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  width: 30%;
+  height: 600px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  border: 1px solid #ccc;
+  width: 70%;
+  border-left: none;
+  height: 600px;
+}
+    </style>
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">Library Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="post.html">University Announcements</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Login</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('http://www.muriva.com/wp-content/uploads/2015/08/Mural-Wallpaper-Books-Plants-Muriva-J79307_RS.jpg')" >
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+            <h1>Welcome To Library Services!</h1>
+              <br>  <br>  <br>   
+          <div class="container">
+  <div class="row">
+    <div  id="searchdiv" class="col-sm-4">
+      <h3>Search</h3>
+      <p>You can now search for any supplies in the university library whether available or not available.</p>
+    </div>
+    <div id="reservediv" class="col-sm-4">
+      <h3>Request a reservation</h3>
+      <p>You can now order a reservation for any supplies from the University Library!
+   Payment will be upon receipt of the product.</p>
+    </div>
+    <div id="borrowdiv" class="col-sm-4">
+      <h3>Request to borrow</h3>        
+      <p>You can now request to borrow any type of books from the university library.Come!</p>
+      
+    </div>
+  </div>
+</div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    <!-- this is Search --> 
+    <div class="container h-100">
+      <div class="d-flex justify-content-center h-100">
+        <div class="searchbar">
+          <input class="search_input" type="text" name="" placeholder="Search...">
+          <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
+        </div>
+      </div>
+    </div>
+    
+    <br><br>
+    <!-- box have suppkies -->
+    
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen"><b class="display-4" style="font-size: 30px">Academic books and lieutenant.</b>
+</button><hr>
+  <button class="tablinks" onclick="openCity(event, 'Paris')"><b class="display-4" style="font-size: 30px">Colored pens, papers and notebooks.</b></button><hr>
+  <button class="tablinks" onclick="openCity(event, 'Tokyo')"><b class="display-4" style="font-size: 30px"> Devices</b>
+ 
+</button>
+</div>
+
+<div id="London" class="tabcontent">
+ 
+<br>
+
+<!-- Photo Grid -->
+    <a href="contact.html" ><img src="http://guest.zad-academy.com/pluginfile.php/1553/mod_book/chapter/286/face_Fekeh.jpg" style="width:30%;height: 30%"> </a>
+    <a href="contact.html"> <img src="https://muslims-res.com/wp-content/uploads/2017/02/16388047_258983064525687_7209636994254583891_n.png" style="width:30%;height: 30%"></a>
+<a href="contact.html">    <img src="http://www.etracpublishing.com/wp-content/uploads/2011/12/300.jpg" style="width:30%;height: 30%"> 
+</a>
+    <br> <br>
+
+    <a href="contact.html">    <img src="http://ige.uobaghdad.edu.iq/wp-content/uploads/sites/37/uploads/z/ns3/yu%20(Copy).jpg" style="width:30%;height: 30%">
+</a>
+<a href="contact.html">    <img src="http://www.maktbtna2211.com/images/145690.jpg" style="width:30%;height: 30%">
+</a>
+    <a href="contact.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrqaakT3qJsu6ToAXQrjOh1SawGbTQ_nU-b5798dQnFbNOL34s" style="width:30%;height: 30%"></a>
+    <br><br>
+    
+    <a href="contact.html"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAz4YLrZH0VzAj1ELCeXrkrOTanfPjgi5v_ScAR9qLODxicHnD" style="width:30%;height: 30%"></a>
+    <a href="contact.html"> 
+     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwrzN1NQHs9sW2DWTX0sQ2nGbkSx9oKco9xBqOyQ_1jnfTyno7" style="width:30%;height: 30%"></a>
+    <a href="contact.html">
+    <img src="    https://i1.rgstatic.net/publication/319331047_mathymatyka_-_alryadyat_bastkhdam_alkwmbywtr/links/59a569ecaca272cf43d9d023/largepreview.png
+" style="width:30%;height: 30%"></a>
+    
+    
+</div>
+
+<div id="Paris" class="tabcontent">
+  
+  <!-- Photo Grid -->
+    <a href="contact.html" ><img src="https://imcut.jollychic.com/uploads/jollyimg/imageLibrary/201806/4KD/26/IL201806262026007413.jpg_300x400x80.jpg" style="width:30%;height: 30%"> </a>
+    <a href="contact.html"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQX9ZwW_CrzZGoOjQxlaTE2OQghWiELF2KNMoc5UbfvI8UnKJco0w" style="width:30%;height: 30%"></a>
+<a href="contact.html">    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNdVBYYbqIp_KVngpGzGtqytuIfA1Yf880ks5IFCZpL2qCSUz4" style="width:30%;height: 30%"> 
+</a>
+    <br> <br>
+
+    <a href="contact.html">    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2w1HwkQxsmMWYgg8G5QyIp57s5XyN3whVRcrsDul_Tkdoi_RM" style="width:30%;height: 30%">
+</a>
+<a href="contact.html">    <img src="https://iphady.com/image/cache/catalog/products/825/d6dc3cc7ebaec6231989fbab66cceac0-400x400.jpg" style="width:30%;height: 30%">
+</a>
+    <a href="contact.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRk812c3tjsGnR7IDAiaXNiHjH0VE5Lx99Tae8gfM4nnx-_93Kv" style="width:30%;height: 30%"></a>
+    <br><br>
+    
+    <a href="contact.html"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQya0OQkiIDobJKMKH2GHe4NqwyCURCMX_xRzXrb1XjWMXvFDllaw" style="width:30%;height: 30%"></a>
+    <a href="contact.html"> 
+     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWGhhK_1cY5mchFqvc1ddZpaJSK64XVXtfd2n5IWQTtpHtBHDjOQ" style="width:30%;height: 30%"></a>
+    <a href="contact.html">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3zC0nNGynzYnu9NHZmiwZMr4J5EMiSK_wK1psWEdGYrsDqWVt" style="width:30%;height: 30%"></a> 
+</div>
+
+<div id="Tokyo" class="tabcontent">
+  
+  <!-- Photo Grid -->
+    <a href="contact.html" ><img src="https://www.jarir.com/media/catalog/product/cache/2/image/400x400/9df78eab33525d08d6e5fb8d27136e95/4/5/457674.jpg" style="width:30%;height: 30%"> </a>
+    <a href="contact.html"> <img src="https://i2.wp.com/mall-egypt.com/wp-content/uploads/2018/02/tm010-white.jpg?fit=408%2C500" style="width:30%;height: 30%"></a>
+<a href="contact.html">    <img src="https://cf5.s3.souqcdn.com/item/2013/07/09/54/64/07/1/item_XL_5464071_2352080.jpg" style="width:30%;height: 30%"> 
+</a>
+    <br> <br>
+
+    <a href="contact.html">    <img src="https://www.jumla-sa.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/B/L/BLUETOOTH_HEADSET_APPLE_AIRPODS_0203020005.jpg" style="width:30%;height: 30%">
+</a>
+<a href="https://misk.org.sa/miskacademy/ar/">    <img src="https://cf2.s3.souqcdn.com/item/2017/07/23/23/50/66/14/item_XL_23506614_33589248.jpg" style="width:30%;height: 30%">
+</a>
+    <a href="contact.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQw79BVLP59r7EwVcyQahMSh4ux2t7X461SphIAMcswyw0Nd16q" style="width:30%;height: 30%"></a>
+    <br><br>
+    
+    <a href="contact.html"> <img src="https://gentooshop.com/pub/media/catalog/product/cache/small_image/424x/925f46717e92fbc24a8e2d03b22927e1/g/o/gouiwall-i.jpeg" style="width:30%;height: 30%"></a>
+    <a href="contact.html"> 
+     <img src="https://cdn.dokkanafkar.com/asset/image/data/anker/powerbank/20100black-600x600h.jpg" style="width:30%;height: 30%"></a>
+    <a href="contact.html">
+    <img src="https://al-fanoos.com/wp-content/uploads/2018/08/Extension-3-mtr-Socket-3.jpg" style="width:30%;height: 30%"></a> 
+    
+</div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+   <br><br><br>   <br><br><br>   <br><br><br>
+   <br><br><br>   <br><br><br>    <br><br><br>
+
+
+
+
+    <div style="width: 100%; height: 200px;"></div>
+    
+
+  <hr>
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <ul class="list-inline text-center">
+            <li class="list-inline-item">
+              <a href="#">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          </ul>
+          <p class="copyright text-muted">Copyright &copy; Your Website 2019</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/clean-blog.min.js"></script>
+
+</body>
+
+</html>
